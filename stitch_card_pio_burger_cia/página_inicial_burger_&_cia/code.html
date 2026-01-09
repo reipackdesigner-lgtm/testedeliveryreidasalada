@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Página Inicial Burger &amp; Cia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e63743",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211112",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<div class="flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-gray-800 dark:text-white text-3xl">restaurant_menu</span>
+</div>
+<h1 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Burger &amp; Cia</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-transparent text-gray-800 dark:text-white text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- HeaderImage -->
+<div class="@container px-4">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-xl min-h-[50vh]" data-alt="Close-up of a juicy, gourmet cheeseburger with lettuce, tomato, and onion." style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 40%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfQHzooqsNTPL9-xvF6lfaDvqVKKyD0dJc8Mkk80daq5ykws1R_njs7h2itOAPpvq5M4eYDgkjuyAJtbsFpgYiVx73o2gDp-fQpLu4XTjFSCntT5ob8FHcaGe9OchZ-3fRgZ5oYPMCGMdd8e6XvfQviAXfCoFz35CKGANrXaQPMXexfe91ENNif-DFYUttVz5GYDIvdEZHDTP5DfSnWniYSYawpmCkiHjLMNDZhLxZV5tSgWUCf7pFhFc0jXiAwpBczfq1X7-oAEXJ");'>
+<div class="flex p-6"><h2 class="text-white tracking-tight text-4xl font-extrabold leading-tight">O Sabor que te Pega!</h2></div>
+</div>
+</div>
+<!-- BodyText -->
+<p class="text-gray-600 dark:text-gray-300 text-base font-normal leading-normal pb-3 pt-4 px-4 text-center">Peça agora o melhor hambúrguer artesanal da cidade.</p>
+<!-- SingleButton -->
+<div class="flex px-4 py-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Ver Cardápio e Pedir</span>
+</button>
+</div>
+<!-- SectionHeader -->
+<h3 class="text-gray-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-6">Nossos Campeões de Vendas</h3>
+<!-- Product Carousel -->
+<div class="relative w-full overflow-x-auto pb-4">
+<div class="flex gap-4 px-4">
+<!-- Product Card 1 -->
+<div class="flex-shrink-0 w-[160px] space-y-2">
+<div class="aspect-square w-full overflow-hidden rounded-lg">
+<img class="h-full w-full object-cover" data-alt="Double bacon cheeseburger with a sesame seed bun." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY-J7-qHVdj7YuWqZdafc4XME4f_O9XoZf2qW8U1MuLgi0zb6lBm7qojXQ7ll4okSk2g4tTeMGoSkrMus_Y4umoSjriqHueaAvsAHTbuNGNcPaQXzOqX_iB9vkfFHckhVIQWDZ0srmk2X3b_3vY4tY4UeTrrfqMotCTugpf1QISOTDQY9cknMM9NLhCvNeiQBZlVgtbYfWLibvlbPfTvFzTZwWRMlO3hUkyuX0lfwmBC-I_TYTdcsQZrC2MA9iNg8N7CnI0OWQU44j"/>
+</div>
+<div class="px-1">
+<h4 class="text-gray-900 dark:text-white font-bold leading-tight truncate">X-Burger Duplo Bacon</h4>
+<p class="text-primary font-semibold text-sm">R$ 32,90</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="flex-shrink-0 w-[160px] space-y-2">
+<div class="aspect-square w-full overflow-hidden rounded-lg">
+<img class="h-full w-full object-cover" data-alt="Classic cheeseburger with pickles and a side of french fries." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk7lxzCJg-l2GvPAhyXy4FYJ5VMIkfUWmab8xisGs4sGH6moPwEp0zCM5eCssnKVUfi_2qWDnJX-heVSHmKUCriTJa30reYjenfhTXD2F17tCTB_FiVmMoZ3h8Q0fAATOMQxXm6-epO-julFqmg98UQA_YlACHLuMH_USdNIW6tkDZsFviud9QzgjYiJf58WwfKFRdKIBap5lvRy2JVi6ZufEMetDY6yTgWTeZC2PlE7zFxPTIsh4MTQHM5CCVoiLJLd_RtOnR2ZQx"/>
+</div>
+<div class="px-1">
+<h4 class="text-gray-900 dark:text-white font-bold leading-tight truncate">Classic Salada</h4>
+<p class="text-primary font-semibold text-sm">R$ 28,50</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="flex-shrink-0 w-[160px] space-y-2">
+<div class="aspect-square w-full overflow-hidden rounded-lg">
+<img class="h-full w-full object-cover" data-alt="Spicy chicken sandwich with a crispy coating." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt3R0RzFcE4Vu2VqYlHeyI-Yzh0NOPsQB-xgGfXpiRpIRRL9WsZxB-760tof1kUsTs-HA3I3Ng4UObHNjK69BtSU5KYMA0xLT1HII3paEug31wnfEBchyeQzHO2h9EYRbgexrRX0wsneQWxg7tlnwr0rrxEzWa74wlFExT5r087vUQ8Q0EBQioqlwwOxJecUOpZQW0M2G48L2hsj5dmTVFUOlltnIgrY6rqjxepjmjFc5rGCkrXXpKdmLc--VHHC8suG1_6aUPNlrW"/>
+</div>
+<div class="px-1">
+<h4 class="text-gray-900 dark:text-white font-bold leading-tight truncate">Frango Crocante</h4>
+<p class="text-primary font-semibold text-sm">R$ 29,90</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="flex-shrink-0 w-[160px] space-y-2">
+<div class="aspect-square w-full overflow-hidden rounded-lg">
+<img class="h-full w-full object-cover" data-alt="Vegetarian burger with a plant-based patty and fresh vegetables." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlJpd2W24umId0nOHsZ4WM2F6-k-D6clK9ekcAlPxuzzXAXeed9G_vXDCuLCqKQm5_rHjvbMsHx1btNo7RhbeiLZEkn3JCMnKx-YPWUgK9gv3Rz8zsa4tbsqzKjVa6s05ziF8RZUFX7HMH4UliiyjckAeEFVDPMCJr8UoEJFQ3qe1CEgAgdmZiYdXHPRC2jAzQhnTLmgzMDxaEE3TxA3JPCQJulzjL19Y_0-q1Tuum_9WdC5YImJGHJBYG3__CT8KhktzZu8sezOGy"/>
+</div>
+<div class="px-1">
+<h4 class="text-gray-900 dark:text-white font-bold leading-tight truncate">Burger Vegetariano</h4>
+<p class="text-primary font-semibold text-sm">R$ 31,00</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-8 pb-8">
+<p class="text-gray-500 dark:text-gray-400 text-xs text-center">© 2024 Burger &amp; Cia. Todos os direitos reservados.</p>
+</footer>
+</div>
+</body></html>

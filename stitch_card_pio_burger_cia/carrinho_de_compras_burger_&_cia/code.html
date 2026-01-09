@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Carrinho de Compras - Burger &amp; Cia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#e63743",
+              "background-light": "#f8f6f6",
+              "background-dark": "#211112",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex items-center bg-background-light/80 px-4 py-3 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="flex size-10 shrink-0 items-center justify-center text-zinc-900 dark:text-white">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold leading-tight tracking-[-0.015em] text-zinc-900 dark:text-white">Carrinho de Compras</h1>
+<div class="size-10 shrink-0"></div> <!-- Spacer -->
+</header>
+<!-- Main Content -->
+<main class="flex-1 px-4 py-4">
+<div class="flex flex-col gap-4">
+<!-- List Item 1 -->
+<div class="flex min-h-[72px] items-center gap-4 rounded-lg bg-zinc-50 p-3 dark:bg-zinc-800/30">
+<div class="aspect-square size-16 rounded-lg bg-cover bg-center bg-no-repeat" data-alt="A delicious supreme bacon cheeseburger on a wooden board." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCI90Wbbz4SAySPotghcN__mNo2_uFpDgS-2M0sRynuLrnMIPsNpEvDujoiFjg5IpL30Xj55Pur5UChkrk3IQRDpagQylabV2jFL9-wav9jcFW5fc5152acGCznKHPT0XKkErrmlwE8Ba1AC-efofn2dYKe9HUdbB_2iKMcKv96LoXzgq0CARdLpXgEyX1rlxkX-o_sXJjqTnofVhZGdzK5dtX6vwO8httQblsl5LGU99RCGP-6merdE_wbm6pUxevTHcEEDYFlrdhZ");'></div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-base font-medium leading-normal text-zinc-900 line-clamp-1 dark:text-white">X-Bacon Supremo</p>
+<p class="text-sm font-normal leading-normal text-zinc-500 line-clamp-2 dark:text-zinc-400">R$ 32,90</p>
+</div>
+<div class="shrink-0">
+<div class="flex items-center gap-2 text-zinc-900 dark:text-white">
+<button class="flex size-7 items-center justify-center rounded-full bg-zinc-200 text-base font-medium leading-normal dark:bg-zinc-700">-</button>
+<span class="w-5 text-center text-base font-medium leading-normal">1</span>
+<button class="flex size-7 items-center justify-center rounded-full bg-primary text-base font-medium leading-normal text-white">+</button>
+</div>
+</div>
+</div>
+<!-- List Item 2 -->
+<div class="flex min-h-[72px] items-center gap-4 rounded-lg bg-zinc-50 p-3 dark:bg-zinc-800/30">
+<div class="aspect-square size-16 rounded-lg bg-cover bg-center bg-no-repeat" data-alt="A large portion of golden french fries in a red container." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA1mTfq8nuaN03wgQt_1FfQNdvxwTogvGnNEBb6GPaKq1ZJAdxrVig5dScG224XQJyjfnsZtjSLnQwxQS7oqjbeqZ0hV-FwXS61EQU0tbvqKtvXwckU-iT-la1HbbvlWKrb1cymw5gfssEjt5gfV4V4xhBAD96uNF6jOeA5p1KEKBq3e75RBgRcYSz4jag2dCtZFdPaNIH_4Wfp1EWNutiw3OIB66wwnJB25Dwmf3PmaMCcchZoSpfzOmgk6G0Cow417xlLYYxU2APx");'></div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-base font-medium leading-normal text-zinc-900 line-clamp-1 dark:text-white">Batata Frita Grande</p>
+<p class="text-sm font-normal leading-normal text-zinc-500 line-clamp-2 dark:text-zinc-400">R$ 15,00</p>
+</div>
+<div class="shrink-0">
+<div class="flex items-center gap-2 text-zinc-900 dark:text-white">
+<button class="flex size-7 items-center justify-center rounded-full bg-zinc-200 text-base font-medium leading-normal dark:bg-zinc-700">-</button>
+<span class="w-5 text-center text-base font-medium leading-normal">2</span>
+<button class="flex size-7 items-center justify-center rounded-full bg-primary text-base font-medium leading-normal text-white">+</button>
+</div>
+</div>
+</div>
+<!-- List Item 3 -->
+<div class="flex min-h-[72px] items-center gap-4 rounded-lg bg-zinc-50 p-3 dark:bg-zinc-800/30">
+<div class="aspect-square size-16 rounded-lg bg-cover bg-center bg-no-repeat" data-alt="A red can of soda with condensation droplets on it." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRyzaUt0PI_cwOM6aqtebmittgQZw0s7y0jCTXYodRN2K8063bX8U8-iSW_U1ZynYp3A5GYesGHbN2wwR0pFDgKRtjQ9wGsrFqzJTA9KWH5adP_STfJsZhjFXhvpSBNRRSDgqdr1FRLDqORd1lzL7GnTEWglqFXdy-PI4k2B-nIXJM-o6uKylG7HhbeUtvKpMjPQSprHSLFjIMbLfWvH8rlzkEJ68nK7J9d2VQaLLLudTp7iakTmNj4yA9d5QOFHydBIUy6DhORwBZ");'></div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-base font-medium leading-normal text-zinc-900 line-clamp-1 dark:text-white">Refrigerante Lata</p>
+<p class="text-sm font-normal leading-normal text-zinc-500 line-clamp-2 dark:text-zinc-400">R$ 8,00</p>
+</div>
+<div class="shrink-0">
+<div class="flex items-center gap-2 text-zinc-900 dark:text-white">
+<button class="flex size-7 items-center justify-center rounded-full bg-zinc-200 text-base font-medium leading-normal dark:bg-zinc-700">-</button>
+<span class="w-5 text-center text-base font-medium leading-normal">1</span>
+<button class="flex size-7 items-center justify-center rounded-full bg-primary text-base font-medium leading-normal text-white">+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Checkout Section -->
+<footer class="sticky bottom-0 w-full bg-background-light px-4 pb-6 pt-4 dark:bg-background-dark">
+<div class="rounded-xl border border-zinc-200 bg-zinc-100 p-4 dark:border-zinc-800 dark:bg-zinc-900">
+<!-- Order Summary -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between">
+<p class="text-sm font-normal leading-normal text-zinc-500 dark:text-zinc-400">Subtotal</p>
+<p class="text-sm font-medium leading-normal text-zinc-900 dark:text-white">R$ 70,90</p>
+</div>
+<div class="flex justify-between">
+<p class="text-sm font-normal leading-normal text-zinc-500 dark:text-zinc-400">Taxa de Entrega</p>
+<p class="text-sm font-medium leading-normal text-zinc-900 dark:text-white">R$ 5,00</p>
+</div>
+<div class="my-2 h-px w-full bg-zinc-200 dark:bg-zinc-700"></div>
+<div class="flex justify-between">
+<p class="text-base font-bold leading-normal text-zinc-900 dark:text-white">Total</p>
+<p class="text-base font-bold leading-normal text-zinc-900 dark:text-white">R$ 75,90</p>
+</div>
+</div>
+<!-- Checkout Button -->
+<button class="mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-primary py-3.5 text-base font-bold text-white shadow-lg shadow-primary/30">
+                    Continuar para o Checkout
+                </button>
+</div>
+</footer>
+</div>
+</body></html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Detalhes do Item - Burger &amp; Cia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#e63743",
+            "background-light": "#f8f6f6",
+            "background-dark": "#211112",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 24px;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex items-center bg-background-light/80 dark:bg-background-dark/80 p-4 pb-2 justify-between backdrop-blur-md">
+<button class="text-gray-900 dark:text-white flex size-10 shrink-0 items-center justify-center rounded-full">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Detalhes do Item</h2>
+<div class="size-10 shrink-0"></div>
+</header>
+<main class="flex-1 pb-40">
+<!-- Header Image -->
+<div class="@container">
+<div class="@[480px]:px-4 @[480px]:py-3">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden @[480px]:rounded-xl min-h-80" data-alt="Close-up of a juicy gourmet cheeseburger" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMWM_C67PZNGlCC6Md2eUt-uY3utYdvzh8ssDWtcgHI67Abnt1QIYsMQiOPTDwerTPSHvBIottT_tL3YYhY0zHVVpRSoI1znt8i00w6pTsfjs5YvPFq8_Uo_2mF5IhxgktVXCSjRMO7AyBEMlFDKpukAkFG9UMc8aJKAaeNrZw1qbvlfbp8wn3-iagsfrAgEXGFOoKo_agDvx-q_KGXTXA1e2Aj1vOYDJ3TKeCJF3Y5ixy5IVofm_dfROuu6vNX2nGf0CAkJkNXZey");'></div>
+</div>
+</div>
+<!-- Item Info -->
+<div class="px-4 pt-4">
+<!-- Headline Text -->
+<h1 class="text-gray-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight text-left">X-Burger Especial</h1>
+<!-- Body Text -->
+<p class="text-gray-600 dark:text-gray-300 text-base font-normal leading-normal pt-2">
+          Pão brioche, 180g de carne suculenta, queijo cheddar, alface, tomate e nosso molho especial da casa.
+        </p>
+<!-- Title Text for Price -->
+<h2 class="text-primary text-[28px] font-bold leading-tight tracking-[-0.015em] text-left pt-4">R$ 29,90</h2>
+</div>
+<!-- Divider -->
+<div class="h-px bg-gray-200 dark:bg-white/10 mx-4 my-6"></div>
+<!-- Customization Section -->
+<div class="px-4 space-y-6">
+<!-- Ponto da Carne -->
+<div>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold">Ponto da Carne</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Escolha uma opção</p>
+<div class="mt-4 space-y-3">
+<label class="flex items-center justify-between p-4 rounded-lg bg-gray-100 dark:bg-white/5 cursor-pointer has-[:checked]:bg-primary/20 has-[:checked]:ring-2 has-[:checked]:ring-primary">
+<span class="text-gray-900 dark:text-white">Mal passado</span>
+<input class="form-radio text-primary bg-transparent border-gray-400 dark:border-gray-600 focus:ring-primary dark:focus:ring-offset-background-dark" name="ponto_carne" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-4 rounded-lg bg-gray-100 dark:bg-white/5 cursor-pointer has-[:checked]:bg-primary/20 has-[:checked]:ring-2 has-[:checked]:ring-primary">
+<span class="text-gray-900 dark:text-white">Ao ponto</span>
+<input checked="" class="form-radio text-primary bg-transparent border-gray-400 dark:border-gray-600 focus:ring-primary dark:focus:ring-offset-background-dark" name="ponto_carne" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-4 rounded-lg bg-gray-100 dark:bg-white/5 cursor-pointer has-[:checked]:bg-primary/20 has-[:checked]:ring-2 has-[:checked]:ring-primary">
+<span class="text-gray-900 dark:text-white">Bem passado</span>
+<input class="form-radio text-primary bg-transparent border-gray-400 dark:border-gray-600 focus:ring-primary dark:focus:ring-offset-background-dark" name="ponto_carne" type="radio"/>
+</label>
+</div>
+</div>
+<!-- Adicionais -->
+<div>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold">Adicionais</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Turbine seu lanche</p>
+<div class="mt-4 space-y-3">
+<label class="flex items-center justify-between p-4 rounded-lg bg-gray-100 dark:bg-white/5 cursor-pointer has-[:checked]:bg-primary/20 has-[:checked]:ring-2 has-[:checked]:ring-primary">
+<div>
+<span class="text-gray-900 dark:text-white">Bacon Crocante</span>
+<p class="text-sm text-gray-500 dark:text-gray-400">+ R$ 4,00</p>
+</div>
+<input checked="" class="form-checkbox text-primary bg-transparent border-gray-400 dark:border-gray-600 rounded focus:ring-primary dark:focus:ring-offset-background-dark" name="adicional_bacon" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-4 rounded-lg bg-gray-100 dark:bg-white/5 cursor-pointer has-[:checked]:bg-primary/20 has-[:checked]:ring-2 has-[:checked]:ring-primary">
+<div>
+<span class="text-gray-900 dark:text-white">Queijo Extra</span>
+<p class="text-sm text-gray-500 dark:text-gray-400">+ R$ 4,00</p>
+</div>
+<input class="form-checkbox text-primary bg-transparent border-gray-400 dark:border-gray-600 rounded focus:ring-primary dark:focus:ring-offset-background-dark" name="adicional_queijo" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-4 rounded-lg bg-gray-100 dark:bg-white/5 cursor-pointer has-[:checked]:bg-primary/20 has-[:checked]:ring-2 has-[:checked]:ring-primary">
+<div>
+<span class="text-gray-900 dark:text-white">Ovo</span>
+<p class="text-sm text-gray-500 dark:text-gray-400">+ R$ 3,00</p>
+</div>
+<input class="form-checkbox text-primary bg-transparent border-gray-400 dark:border-gray-600 rounded focus:ring-primary dark:focus:ring-offset-background-dark" name="adicional_ovo" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+</main>
+<!-- Sticky Footer CTA -->
+<footer class="fixed bottom-0 left-0 right-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md p-4 border-t border-gray-200 dark:border-white/10">
+<div class="flex items-center gap-4">
+<!-- Quantity Stepper -->
+<div class="flex items-center gap-2 bg-gray-100 dark:bg-white/10 p-2 rounded-lg">
+<button class="text-primary size-8 flex items-center justify-center rounded-md transition-colors hover:bg-primary/20">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<span class="text-gray-900 dark:text-white font-bold w-6 text-center">1</span>
+<button class="text-primary size-8 flex items-center justify-center rounded-md transition-colors hover:bg-primary/20">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<!-- Add to Cart Button -->
+<button class="flex-1 bg-primary text-white font-bold py-4 px-6 rounded-lg text-center transition-opacity hover:opacity-90">
+          Adicionar - R$ 33,90
+        </button>
+</div>
+</footer>
+</div>
+</body></html>
